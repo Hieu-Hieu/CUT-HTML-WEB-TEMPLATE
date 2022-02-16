@@ -1,0 +1,135 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+  color: #1a2b5f;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  border: 0;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.5rem 3rem;
+  color: #1a2b5f;
+  background-color: transparent;
+}
+.btn--border {
+  border: 1.5px solid currentColor;
+}
+.btn--rounded {
+  border-radius: 5rem;
+}
+.btn--primary {
+  background-color: #ffc87a;
+}
+.btn--primary.has-shadow {
+  box-shadow: 0 10px 35px -5px #ffc87a;
+}
+
+.header {
+  padding-top: 4rem;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.header__menu-item {
+  margin-left: 5rem;
+}
+.header__menu-item:last-child {
+  margin-left: 7rem;
+}
+.header__menu-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #1a2b5f;
+  transition: color 0.25s linear, border 0.25s linear;
+}
+.header__menu-link:hover {
+  color: #ffc87a;
+}
+
+.logo {
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #1a2b5f;
+}
+.logo__text {
+  color: #ffc87a;
+}
+
+.banner {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  margin: 0 auto;
+  max-width: 80rem;
+  text-align: center;
+}
+.banner__heading {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.banner__description {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.banner__buttons {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.banner__buttons .btn {
+  margin: 0 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
