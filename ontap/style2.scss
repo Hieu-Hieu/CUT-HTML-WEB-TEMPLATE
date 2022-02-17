@@ -85,6 +85,11 @@ body{
     border-radius: 3rem;
   }
 
+  &--primary{
+    background-color: $primary-color;
+    box-shadow: 0 5px 15px -5px $primary-color;
+  }
+
 }
 
 .header{
@@ -123,11 +128,15 @@ body{
     font-weight: 600;
   }
   &__description{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: 4rem;
   }
   &__buttons{
     margin-top: 4rem;
+    @include flex(stretch,center);
+    .btn{
+      margin: 0 1rem;
+    }
   }
 }
 

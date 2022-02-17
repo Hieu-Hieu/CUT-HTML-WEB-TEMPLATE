@@ -53,12 +53,17 @@ body {
 }
 .btn:hover {
   border-color: #ffc87a;
+  color: #ffc87a;
 }
 .btn--border {
   border: solid 1.3px currentColor;
 }
 .btn--rounded {
   border-radius: 3rem;
+}
+.btn--primary {
+  background-color: #ffc87a;
+  box-shadow: 0 5px 15px -5px #ffc87a;
 }
 
 .header {
@@ -103,11 +108,19 @@ body {
   font-weight: 600;
 }
 .banner__description {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-top: 4rem;
 }
 .banner__buttons {
   margin-top: 4rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.banner__buttons .btn {
+  margin: 0 1rem;
 }
 
 /*# sourceMappingURL=style2.css.map */

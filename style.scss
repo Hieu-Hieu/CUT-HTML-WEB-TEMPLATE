@@ -147,3 +147,49 @@ body{
     }
   }
 }
+
+.category{
+  &__list{
+    @include flex(stretch,space-between, wrap)
+  }
+
+  &__item{
+    // width: calc(25% - 22.5px);
+    width: calc((100% - 90px)/4);
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 35px -5px rgba(235, 131, 174, 0.25);
+
+    @include flex(stretch,flex-start ,nowrap ,column ); // flex-start để đẩy name các item lên đầu và thẳng hàng nhau
+    
+  }
+
+  &__image{
+    @include size(100%, 23rem );
+    border-radius: inherit;
+    object-fit: cover; //khi thay đổi width heigth thì ảnh vẫn luôn căn giữa mà ko bị vỡ hay nén ảnh
+    margin-bottom: 4rem;
+  }
+
+  &__name,
+  &__details{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__name{
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__details{
+    font-size: 1.4rem;
+    color: $text-gray;
+    margin-top: auto; // tự động chiếm hết phần khoảng trồng còn lại và đẩy content xuống dưới cùng
+    i{
+      margin-left: 1.5rem;
+    }
+  }
+}
