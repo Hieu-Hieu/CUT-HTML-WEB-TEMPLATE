@@ -44,7 +44,7 @@ body {
   border: 0;
   font-size: 1.6rem;
   text-align: center;
-  padding: 0.5rem 3rem;
+  padding: 0.6rem 3rem;
   color: #1a2b5f;
   background-color: transparent;
 }
@@ -426,6 +426,65 @@ body {
   font-size: 1.4rem;
   margin-bottom: 3rem;
   width: fit-content;
+}
+
+@media screen and (max-width: 1023px) {
+  .banner {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .banner__heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .banner__description {
+    font-size: 1.6rem;
+  }
+  .banner__buttons > .btn {
+    font-size: 1.4rem;
+  }
+
+  .category__item {
+    width: calc(50% - 15px);
+    margin-bottom: 2.5rem;
+  }
+
+  .feature {
+    padding-top: 10rem;
+  }
+  .feature__item {
+    flex-direction: column;
+    margin-bottom: 8rem;
+  }
+  .feature__item:nth-child(odd) {
+    margin: 0 auto;
+  }
+  .feature__item:nth-child(even) {
+    flex-direction: column;
+  }
+  .feature__image, .feature__info {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .banner__heading {
+    font-size: 3rem;
+  }
+  .banner__buttons > .btn {
+    font-size: 1.2rem;
+  }
+
+  .category__item {
+    width: 100%;
+  }
+  .category__image {
+    height: 18rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
