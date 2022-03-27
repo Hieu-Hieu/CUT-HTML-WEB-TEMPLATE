@@ -138,15 +138,21 @@ html ::-webkit-scrollbar-thumb {
   justify-content: space-between;
   height: 40px;
   border: solid 1px #ccc;
-  width: 536px;
+  max-width: 536px;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 .header-center .search-input-wrap .search-icon {
+  display: none;
   font-size: 20px;
   line-height: 40px;
-  padding: 0 10px;
+  padding: 0 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header-center .search-input-wrap .search-icon.active {
+  display: block;
 }
 .header-center .search-input-wrap .search-input {
   font-size: 16px;
@@ -156,6 +162,8 @@ html ::-webkit-scrollbar-thumb {
   outline: none;
   flex: 1;
   margin-right: 40px;
+  padding-left: 10px;
+  min-width: 464px;
 }
 .header-center .search-input-wrap .search-tool {
   width: 19px;

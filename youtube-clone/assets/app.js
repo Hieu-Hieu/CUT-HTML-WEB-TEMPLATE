@@ -1,6 +1,7 @@
 //lấy div .menu-icon
 const menuIcon = document.querySelector(".sidebar-large");
 const overlay = document.querySelector(".overlay");
+const inputSearch = document.querySelector(".search-icon");
 
 function showSidebar() {
   if (menuIcon.classList.contains("active")) {
@@ -10,4 +11,10 @@ function showSidebar() {
     overlay.classList.remove("active");
   } else overlay.classList.add("active");
   //   console.log("aaaa");
+}
+
+function fucusInput() {
+  if (inputSearch.classList.contains("active")) {
+    inputSearch.classList.remove("active");
+  } else inputSearch.classList.add("active");
 }
