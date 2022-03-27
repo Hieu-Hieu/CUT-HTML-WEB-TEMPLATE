@@ -2,6 +2,21 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+html {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 4px 4px 6px $main-bg-color;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #606060;
+    border-radius: 10px;
+  }
+}
+
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -11,4 +26,19 @@ body {
   //   max-width: 1260px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  transition: all 0.2s ease-in-out;
+  &.active {
+    display: block;
+  }
+  z-index: 2500;
 }
