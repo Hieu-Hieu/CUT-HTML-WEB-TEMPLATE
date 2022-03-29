@@ -1,0 +1,79 @@
+html {
+  font-size: 62.5%;
+}
+
+body,
+input,
+button,
+option,
+textarea,
+label,
+select,
+legend,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font: 14px/18px Arial, Helvetica, sans-serif;
+  color: $primary-text-color;
+  outline: none;
+}
+
+.wrapper {
+  max-width: $wrapper;
+}
+
+.container {
+  max-width: $container;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// ^= : lấy tất cả thẻ i mà class bắt đầu bằng "tgdd-icon")
+// *= : lấy tất cả thẻ i mà class có chứa "tgdd-icon")
+
+i[class^="tgdd-icon"],
+i[class*="tgdd-icon"] {
+  background-image: url("https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/TGDD/Desktop/icon_common.22122021@2x.png");
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  width: 30px;
+  height: 30px;
+  line-height: 30;
+  // vertical-align: middle;
+  display: block;
+}
+
+@mixin flex(
+  $align: flex-start,
+  $justify: flex-start,
+  $wrap: nowrap,
+  $dir: row
+) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+  flex-direction: $dir;
+}
+
+@keyframes dot-solar {
+  from {
+    padding: 0;
+    opacity: 1;
+    border-width: 1;
+  }
+  to {
+    padding: 10px;
+    opacity: 0;
+    border-width: 2.4px;
+  }
+}

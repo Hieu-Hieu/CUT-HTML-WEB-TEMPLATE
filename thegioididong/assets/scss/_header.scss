@@ -1,0 +1,247 @@
+.header {
+  &-vertical-separate {
+    width: 1px;
+    height: $header-top-height;
+    background-color: #232323;
+  }
+  &__top {
+    height: $header-top-height;
+    background-color: $header-top-bg;
+    width: 100%;
+
+    > div {
+      height: 100%;
+      @include flex(center, space-between);
+    }
+  }
+
+  &__logo {
+    margin-right: 16px;
+    > i {
+      background-position: 0 0;
+      height: 24px;
+      width: 141px;
+      display: block;
+    }
+  }
+
+  &__address {
+    font-size: 11px;
+    color: $text-white;
+    line-height: 15px;
+    text-decoration: none;
+    margin: 0 15px;
+    min-width: 1.8rem;
+    height: 3rem;
+    flex-shrink: 0;
+
+    > span {
+      color: #ffe500;
+      font-weight: bold;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-right: 15px;
+      position: relative;
+      min-width: 117px;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 4px;
+        right: 40px;
+        border-top: 5px solid #ffe500;
+        border-left: 5px solid #000;
+        border-right: 5px solid #000;
+      }
+    }
+  }
+
+  &__search {
+    height: 3rem;
+    width: 22.2rem;
+    border-radius: 0.4rem;
+    position: relative;
+    overflow: hidden;
+
+    > button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 3rem;
+      cursor: pointer;
+      background-color: #fff;
+      outline: none;
+      border: none;
+
+      > i {
+        background-position: -150px 0;
+        height: 17px;
+        width: 17px;
+      }
+    }
+  }
+
+  .input-search {
+    font-size: 1.2rem;
+    height: 3rem;
+    line-height: 1.4rem;
+    padding: 0.8rem 3.5rem 0.8rem 1.3rem;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  &__cart {
+    height: 30px;
+    width: 100px;
+    border: 1px solid #8f8f8f;
+    border-radius: 4px;
+    @include flex(center, space-between);
+    color: $text-white;
+    font-size: 12px;
+    padding: 5px 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: rgba($color: #fff, $alpha: 0.4);
+    }
+
+    .tgdd-icon-cart {
+      background-position: -175px 0;
+      width: 20px;
+      height: 18px;
+    }
+  }
+
+  &__history {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: $text-white;
+    width: 5.6rem;
+    margin-left: 1.2rem;
+    margin-right: 1rem;
+    &:hover {
+      color: $text-yellow;
+    }
+  }
+
+  &__hot {
+    font-size: 1.2rem;
+    color: $text-yellow;
+    line-height: 1.4rem;
+    @include flex(center, space-between);
+    width: 18%;
+    .circle {
+      display: block;
+      min-width: 8px;
+      max-width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background-color: $text-yellow;
+      position: relative;
+      margin: 9px;
+
+      .animate {
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        border: 1px solid #ffe66b;
+        animation: dot-solar 1.25s linear infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  &__top-list {
+    display: flex;
+    align-items: center;
+
+    .top-list__item {
+      display: inline-flex;
+      text-align: center;
+      align-items: center;
+      vertical-align: middle;
+      height: 4rem;
+      > a {
+        color: $text-white;
+        padding: 1.6rem;
+        font-size: 1.2rem;
+        // height: 1.4rem;
+
+        &:hover {
+          color: $text-yellow;
+        }
+      }
+    }
+  }
+
+  &__main {
+    height: 4.3rem;
+    background-color: $header-main-bg;
+
+    > div {
+      width: 100%;
+    }
+
+    .main-menu {
+      width: 100%;
+      @include flex(center, space-between);
+
+      .tgdd-icon-phone {
+        background-position: -85px -90px;
+        height: 20px;
+        width: 13px;
+      }
+      .tgdd-icon-laptop {
+        background-position: -105px -90px;
+        height: 20px;
+        width: 25px;
+      }
+      .tgdd-icon-tablet {
+        background-position: -140px -90px;
+        height: 20px;
+        width: 16px;
+      }
+      .tgdd-icon-phukien {
+        background-position: -165px -90px;
+        height: 18px;
+        width: 22px;
+      }
+      .tgdd-icon-smartwatch {
+        background-position: -195px -90px;
+        height: 22px;
+        width: 17px;
+      }
+      .tgdd-icon-pcmayin {
+        background-position: -240px -90px;
+        height: 16px;
+        width: 23px;
+      }
+
+      li > a {
+        color: #000;
+        display: flex;
+        align-items: center;
+        height: 4.3rem;
+        width: 100%;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+      li {
+        :hover {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
