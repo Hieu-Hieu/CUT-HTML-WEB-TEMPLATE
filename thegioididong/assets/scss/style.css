@@ -424,6 +424,12 @@ i[class*=tgdd-icon] {
   height: 16px;
   width: 23px;
 }
+.header__main .main-menu li {
+  padding: 0 1rem;
+}
+.header__main .main-menu li:hover {
+  background-color: #fff;
+}
 .header__main .main-menu li > a {
   color: #000;
   display: flex;
@@ -434,8 +440,98 @@ i[class*=tgdd-icon] {
 .header__main .main-menu li > a i {
   margin-right: 5px;
 }
-.header__main .main-menu li :hover {
+.header__main .main-menu li .simthecao {
+  position: relative;
+}
+.header__main .main-menu li .simthecao p {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: -14px;
+  width: 40px;
+  height: 14px;
+  border-radius: 4px;
+  background-color: #f51212;
+  font-size: 9px;
+  color: #fff;
+  text-align: center;
+  line-height: 14px;
+}
+.header__main .main-menu li .simthecao p:before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: -3px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #f51212;
+}
+.header__main .main-menu .phukien {
+  position: relative;
+  padding-right: 2.2rem;
+}
+.header__main .main-menu .phukien:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 6px;
+  border-top: 5px solid #000;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.header__main .main-menu .phukien:hover > .phukien-subnav {
+  display: flex;
+}
+.header__main .main-menu .phukien-subnav {
+  position: absolute;
   background-color: #fff;
+  width: 77rem;
+  z-index: 10;
+  top: 4.3rem;
+  left: 0;
+  border-radius: 4px;
+  display: flex;
+  border: 1px solid #eee;
+  padding: 10px;
+  display: none;
+}
+.header__main .main-menu .pk-subnav-item {
+  width: 33.3333%;
+}
+.header__main .main-menu .pk-subnav-item strong {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+.header__main .main-menu .pk-subnav-item strong > a[class=Xemtatca] {
+  display: inline;
+  color: #4a90e2;
+  font-size: 11px;
+  position: relative;
+  text-transform: initial;
+  padding-right: 10px;
+}
+.header__main .main-menu .pk-subnav-item strong > a[class=Xemtatca]:after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 2px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #4a90e2;
+}
+.header__main .main-menu .pk-subnav-item a > h3 {
+  padding: 10px 5px 0 0;
+}
+.header__main .main-menu .pk-subnav-item a > h3:hover {
+  color: #4a90e2;
+}
+.header__main .main-menu .pk-subnav-item > div {
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

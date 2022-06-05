@@ -226,22 +226,120 @@
         width: 23px;
       }
 
-      li > a {
-        color: #000;
-        display: flex;
-        align-items: center;
-        height: 4.3rem;
-        width: 100%;
+      li {
+        padding: 0 1rem;
 
-        i {
-          margin-right: 5px;
+        &:hover {
+          background-color: #fff;
+        }
+        > a {
+          color: #000;
+          display: flex;
+          align-items: center;
+          height: 4.3rem;
+          width: 100%;
+  
+          i {
+            margin-right: 5px;
+          }
+        }
+        .simthecao{
+          position: relative;
+          p{
+            display: block;
+            position: absolute;
+            top: 1px;
+            right: -14px;
+            width: 40px;
+            height: 14px;
+            border-radius: 4px;
+            background-color: #f51212;
+            font-size: 9px;
+            color:#fff;
+            text-align: center;
+            line-height: 14px;
+            &:before{
+              display: block;
+              content: "";
+              position: absolute;
+              left: 4px;
+              bottom: -3px;
+              border-left: 3px solid transparent;
+              border-right: 3px solid transparent;
+              border-top: 3px solid #f51212;
+            }
+          }
         }
       }
-      li {
-        :hover {
-          background-color: #fff;
+
+      .phukien{
+        position: relative;
+        padding-right: 2.2rem;
+        &:after{
+          content: "";
+          display: block;
+          position: absolute;
+          top: 2rem;
+          right: 6px;
+          border-top: 5px solid #000;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+        }
+        &:hover>.phukien-subnav{
+          display: flex;
+        }
+      }
+      .phukien-subnav{
+        position: absolute;
+        background-color: #fff;
+        width: 77rem;
+        z-index: 10;
+        top: 4.3rem;
+        left: 0;
+        border-radius: 4px;
+        display: flex;
+        border: 1px solid #eee;
+        padding: 10px;
+        display: none;
+      }
+      .pk-subnav-item{
+        width: 33.3333%;
+        strong{
+          font-weight: bold;
+          text-transform: uppercase;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #eee;
+          >a[class="Xemtatca"]{
+            $tex-color:#4a90e2;
+            display: inline;
+            color: $tex-color;
+            font-size: 11px;
+            position: relative;
+            text-transform: initial;
+            padding-right: 10px;
+            &:after{
+              display: block;
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 2px;
+              border-top: 4px solid transparent;
+              border-bottom: 4px solid transparent;
+              border-left: 4px solid $tex-color;
+            }
+          }
+        }
+        a>h3{
+          padding: 10px 5px 0 0;
+          &:hover{
+            color: #4a90e2;
+          }
+        }
+        >div{
+          padding-bottom: 10px;
         }
       }
     }
+
   }
 }
